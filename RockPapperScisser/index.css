@@ -1,0 +1,44 @@
+.table{
+    height:40vh;
+    border:1px solid green;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.table button img,.table div img {
+    height: 80px;
+    width: 80px;
+}
+.table button img:hover{
+    height: 85px;
+    width: 85px;
+    background-color:  	#BEBEBE;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.score{
+    width: 90%;
+    height: 20vh;
+    border:1px solid blue;
+}
+
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.show{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
