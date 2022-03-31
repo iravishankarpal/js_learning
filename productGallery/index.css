@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding:0px;
+
+}
+
+
+.hero{
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.smallImages{
+    width: 10vw;
+
+}
+.smallImages img{
+    opacity: .6;
+    height: atuo;
+    width: 70px;
+    margin:10px;
+
+}
+.smallImages img:hover{
+    opacity: 1;
+}
+.mdImg{
+    height: 100vh;
+    width: auto;
+    
+}
+.mdImg img{
+    width: 100%;
+    height: 100%;
+}
+.largeImg{
+    height: 100vw;
+    width: 60vw;
+
+}
