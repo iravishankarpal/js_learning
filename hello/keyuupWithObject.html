@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Displaying a JavaScript object will output [object Object]:</p>
+<h1 id="demo">i will change</h1>
+<p >chosse name age city fullname</p>
+<input id='value' >
+<script>
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York",
+  fullName: function() {
+    return `${person.name} ${person.age} ${this.city}`; 
+  }
+};
+ document.getElementById("value").addEventListener("keyup", function(event) {
+      let x = event.target.value
+         console.log(x);
+     document.getElementById("demo").innerHTML =`Man's ${person[x]}`;
+ });
+ 
+
+
+</script>
+
+</body>
+</html>
