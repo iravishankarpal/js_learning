@@ -8,13 +8,16 @@
 </head>
 <body>
     <script>
+        function ravi(){
+            console.log("ravi");
+        }
         function Person(first, last, age, eyecolor){
            
             this.firstName = first;
             this.lastName = last;
             this.age = age;
             this.eyeColor = eyecolor;
-        
+            
            
          
    }
@@ -31,13 +34,17 @@
         // }
 const myFather = new Person("John", "Doe", 50, "blue");
 const myMother = new Person("Sally", "Rally", 48, "green");
+const son = new Person("ravi", "kumar", 20, "black");
+console.log("🚀 ~ file: diffClass&Obj.html ~ line 38 ~ son", son)
+console.log("🚀 ~ file: diffClass&Obj.html ~ line 34 ~ myMother", myMother)
 
         
 
-console.log(myFather.first)
+console.log(myFather.firstName)
 console.log(myMother)
-console.log(myFather[fullName])
+// console.log(myFather[fullName])
 
+ravi();
 
 
 
