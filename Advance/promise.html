@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        let promiseConditon = true
+
+        var myPromise = new Promise((fullfiled,rejected)=>{
+               if(promiseConditon){
+                   fullfiled("promise is completed")
+    
+               } 
+               else{
+                   rejected("promise is rejected")
+               
+               }
+
+
+        })
+ 
+        myPromise.then( (resoponse) =>console.log(" resoponse", resoponse)).catch((rej)=>  console.log("🚀 ~ file: promise.html ~ line 27 ~ rej", rej))
+      
+    
+
+    </script>
+</body>
+</html>
