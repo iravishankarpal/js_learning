@@ -13,12 +13,19 @@
                 age: 30,
                 last:"Doe",
                 city: "New York",
-                fullName: function() {
+                fName : function() {
+                    return  `${this.name} ${this.last}`; 
+                },
+                 fullName() {
+                    return  `${this.name} ${this.last}`; 
+                },
+                get fullNameAgain() {
                     return  `${this.name} ${this.last}`; 
                 }
             };
-            console.log("🚀 ~ file: obj.html ~ line 20 ~ nai", nai)
-     
+            console.log("🚀 ~ file: obj.html ~ line 20 ~ nai", nai.fName())//jon doe
+            console.log("🚀 ~ file: obj.html ~ line 20 ~ nai", nai.fullName() ) //jon doe
+            console.log("🚀 ~ file: obj.html ~ line 20 ~ nai", nai.fullNameAgain )//jon doe
             
     </script>
 </body>

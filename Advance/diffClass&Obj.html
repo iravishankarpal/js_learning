@@ -8,45 +8,56 @@
 </head>
 <body>
     <script>
-        function ravi(){
-            console.log("ravi");
-        }
-        function Person(first, last, age, eyecolor){
-           
-            this.firstName = first;
-            this.lastName = last;
-            this.age = age;
-            this.eyeColor = eyecolor;
-            
-           
-         
-   }
-        // class Person{
-        //     constructor(first, last, age, eyecolor) {
-        //         this.firstName = first;
-        //         this.lastName = last;
-        //         this.age = age;
-        //         this.eyeColor = eyecolor;
-        //     }
-        //     get fullName() {
-        //         return this.firstName + " " + this.lastName;
-        //     }
-        // }
-const myFather = new Person("John", "Doe", 50, "blue");
-const myMother = new Person("Sally", "Rally", 48, "green");
-const son = new Person("ravi", "kumar", 20, "black");
-console.log("🚀 ~ file: diffClass&Obj.html ~ line 38 ~ son", son)
-console.log("🚀 ~ file: diffClass&Obj.html ~ line 34 ~ myMother", myMother)
+      
+    const object1 = {
+            name: "John",
+            age: 30,
+            last:"Doe",
+            city: "New York",
+            fName : function() {
+                return  `${this.name} ${this.last}`; 
+            },
+                fullName() {
+                return  `${this.name} ${this.last}`; 
+            },
+            get fullNameAgain() {
+                return  `${this.name} ${this.last}`; 
+            }
+        };
+        console.log(" object1 name ", object1.name)
+        console.log("🚀 ~ file: obj.html ~ line 20 ~ object1", object1.fName())//jon doe
+        console.log("🚀 ~ file: obj.html ~ line 20 ~ object1", object1.fullName() ) //jon doe
+        console.log("🚀 ~ file: obj.html ~ line 20 ~ object1", object1.fullNameAgain )//jon doe
 
+
+        class PersonClass{
+            constructor(first, last, age, eyecolor) {
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.eyeColor = eyecolor;
+            }
+            get fullName() {
+                return this.firstName + " " + this.lastName;
+            }
+            static fullname_Static(){
+                return "I am static function ";
+            }
+            
+        }
+
+
+
+const FatherC = new PersonClass("class", "Doeclass", 50, "blueclass");
+const MotherC = new PersonClass("Sallyclass", "Rallyclass", 48, "greenclass");
+const sonC = new PersonClass("raviclass", "kumarclass", 20, "blackclass");
+console.log("🚀 ~ file: diffClass&Obj.html ~ line 38 ~ son", sonC)
+console.log("🚀 ~ file: diffClass&Obj.html ~ line 34 ~ myMother", MotherC.fullName)
+
+console.log(PersonClass.fullname_Static())
         
 
-console.log(myFather.firstName)
-console.log(myMother)
-// console.log(myFather[fullName])
-
-ravi();
-
-
+        
 
     </script>
 </body>

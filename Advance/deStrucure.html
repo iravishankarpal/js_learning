@@ -8,12 +8,22 @@
 </head>
 <body>
         <script>
+            // ! destructre object example
             let x = {
-                name:"age",
-                age: "bhai"
+                "name":"age",
+                "age": "bhai"
             }
-            var [name,age] = x
+            var {name,age} = x
+
             console.log(name,age)
+
+            //! destructre array example
+            let y = [
+                "sonam","soham","ravi","kali"
+            ]
+            var [a,b,c,d] = y;
+            console.log(a,b,c,d) 
+
         </script>
 </body>
 </html>
